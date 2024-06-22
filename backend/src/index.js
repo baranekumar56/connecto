@@ -1,9 +1,9 @@
 const express = require('express');
-const routes = require('./routes/HomePageRoutes');
+const homePageRoutes = require('./routes/HomePageRoutes.js');
 
 const app = express();
 
-app.use("/", routes);
+app.use("/home", homePageRoutes);
 
 app.listen(8000, () => {
     console.log("server is listening in port 8000");
